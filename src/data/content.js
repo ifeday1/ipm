@@ -5,7 +5,7 @@ export const MINISTRY = {
   name: "Immortal Praise Ministry",
   shortName: "IPM",
   scripture: "Psalm 8",
-  tagline: "Celebrating the majesty of God through worship.",
+  tagline: "Celebrating the majesty of God through Praise in worship.",
   heroBackgroundImage: "/assets/almighty-flyer.jpg",
   youtubeChannel: "https://youtube.com/@koredeemmanuelipm",
   logoWhite: "/assets/logo-white.png",
@@ -55,7 +55,7 @@ export const MINISTRATIONS = [
     linkUrl: "https://youtu.be/xzVhEqe4plw?si=E9Haro3xPVm_wcJ1",
   },
   {
-    title: "Da Ina Tuntun",
+    title: "My Worship",
     tag: "Debut album — My Worship",
     image: "/assets/my-worship-cover.jpg",
     linkLabel: "Listen to My Worship",
