@@ -117,16 +117,19 @@ export const LEADER = {
 // PLACEHOLDER — replace with real testimonials as they come in.
 export const TESTIMONIALS = [
   {
-    quote: "The worship session that night stayed with me for weeks. It felt like being in the presence of God.",
-    name: "A member of the congregation",
+    quote:
+      'Last year"s concert i asked God for a particular revelation and He answered me. I was so blessed.',
+    name: 'attendee',
   },
   {
-    quote: "IPM ministered at our youth camp and the atmosphere completely shifted. Lives were touched.",
-    name: "Camp attendee",
+    quote:
+      'I lost my flow with God, but when i was under min Korede"s ministration, I felt the presence of God and my spirit was revived from that day.',
+    name: 'Camp attendee',
   },
   {
-    quote: "Da Ina Tuntun has become part of my daily devotion. Every track carries something real.",
-    name: "Listener",
+    quote:
+      'Da Ina Tuntun has become part of my daily devotion. It revived my spirit and brought me closer to God.',
+    name: 'Listener',
   },
 ];
 
