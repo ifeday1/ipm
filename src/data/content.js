@@ -61,6 +61,13 @@ export const MINISTRATIONS = [
     linkLabel: "Listen to My Worship",
     linkUrl: "https://youtu.be/YS56dIe1ZA4?si=kq4kkVjIx1nV-uB-",
   },
+  {
+    title: "Live at Events",
+    tag: "IPM also ministers in song at events",
+    image: "https://img.youtube.com/vi/1Z48Ws4yCYA/maxresdefault.jpg",
+    linkLabel: "Watch on YouTube",
+    linkUrl: "https://youtu.be/1Z48Ws4yCYA?si=lCpPl6N5TtymZ4YH",
+  },
 ];
 
 export const WHAT_WE_DO = [
