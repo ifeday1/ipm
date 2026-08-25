@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import Nav from "./components/Nav";
 import Hero from "./components/Hero";
 import InvisibleGod from "./components/InvisibleGod";
+import FreeBus from "./components/FreeBus";
 import About from "./components/About";
 import Mission from "./components/Mission";
 import FeaturedMinistration from "./components/FeaturedMinistration";
@@ -45,6 +46,7 @@ export default function App() {
       <Nav />
       <Hero />
       <InvisibleGod />
+      <FreeBus />
       <About />
       <Mission />
       <FeaturedMinistration />

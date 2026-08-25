@@ -27,6 +27,26 @@ export const FEATURED_EVENT = {
   sponsorshipPhone: "08164192318",
 };
 
+export const FREE_BUS = {
+  eyebrow: "Free Bus Movement",
+  title: "Your ride to The Almighty is on us.",
+  flyerImage: "/assets/free-bus-flyer.jpg",
+  intro:
+    "Seats are limited — register today and reserve your free seat on the bus to Immortal Invisible God 9.0.",
+  registerUrl: "https://immortalpraiseministry.org/", // PLACEHOLDER — confirm this is the intended bus registration link
+  stops: [
+    { location: "Onipanu", name: "Deborah", phone: "09034622237" },
+    { location: "Shomolu", name: "Taiwo", phone: "08097751198" },
+    { location: "Yabatech", name: "Ra'el", phone: "08140177537" },
+    { location: "FCET Akoka", name: "Patricia", phone: "09024847613" },
+    { location: "Ikorodu Axis", name: "Solomon", phone: "08160025877" },
+    { location: "New Garage/Iyanaoworo", name: "Oreofejesu", phone: "08104869175" },
+    { location: "Bariga", name: "Olorunjoba", phone: "09014893783" },
+    { location: "Alapere", name: "Emmanuel", phone: "07019404636" },
+    { location: "Surulere/Ojuelegba", name: "Adeyi", phone: "07063541451" },
+  ],
+};
+
 export const REGISTER = {
   ctaLabel: "Register",
   title: "Register for our next event.",

@@ -3,6 +3,7 @@ import { MINISTRY, REGISTER } from "../data/content";
 
 const LINKS = [
   ["Almighty 9.0", "#invisible-god"],
+  ["Free Bus", "#free-bus"],
   ["About", "#about"],
   ["Mission", "#mission"],
   ["What We Do", "#what-we-do"],
