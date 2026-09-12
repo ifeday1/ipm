@@ -2,7 +2,6 @@ import { useEffect } from "react";
 import Nav from "./components/Nav";
 import Hero from "./components/Hero";
 import InvisibleGod from "./components/InvisibleGod";
-import FreeBus from "./components/FreeBus";
 import About from "./components/About";
 import Mission from "./components/Mission";
 import FeaturedMinistration from "./components/FeaturedMinistration";
@@ -11,7 +10,6 @@ import Events from "./components/Events";
 import Gallery from "./components/Gallery";
 import Leader from "./components/Leader";
 import Testimonials from "./components/Testimonials";
-import Register from "./components/Register";
 import Support from "./components/Support";
 import FAQ from "./components/FAQ";
 import Contact from "./components/Contact";
@@ -46,7 +44,6 @@ export default function App() {
       <Nav />
       <Hero />
       <InvisibleGod />
-      <FreeBus />
       <About />
       <Mission />
       <FeaturedMinistration />
@@ -55,7 +52,6 @@ export default function App() {
       <Gallery />
       <Leader />
       <Testimonials />
-      <Register />
       <Support />
       <FAQ />
       <Contact />

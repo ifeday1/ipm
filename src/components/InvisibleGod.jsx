@@ -1,4 +1,4 @@
-import { FEATURED_EVENT, REGISTER } from "../data/content";
+import { FEATURED_EVENT } from "../data/content";
 
 export default function InvisibleGod() {
   const e = FEATURED_EVENT;
@@ -12,6 +12,10 @@ export default function InvisibleGod() {
           <div className="eyebrow">{e.series}</div>
           <h2>{e.title}</h2>
           <p className="lead">Hosted by {e.host}.</p>
+
+          {e.concluded && (
+            <p className="ig-status">This event has concluded — thank you to everyone who came out. The full ministration is now up on YouTube.</p>
+          )}
 
           <div className="ig-facts">
             <div>
@@ -32,17 +36,9 @@ export default function InvisibleGod() {
             </div>
           </div>
 
-          <div className="ig-tags">
-            <span>{e.entry}</span>
-            <span>{e.bus}</span>
-          </div>
-
           <div className="cta-row">
-            <a href={REGISTER.url} target="_blank" rel="noopener noreferrer" className="btn">
-              Register
-            </a>
-            <a href={`tel:${e.sponsorshipPhone}`} className="btn ghost">
-              Sponsorship: {e.sponsorshipPhone}
+            <a href={e.replayUrl} target="_blank" rel="noopener noreferrer" className="btn">
+              Watch the Replay
             </a>
           </div>
         </div>

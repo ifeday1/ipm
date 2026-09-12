@@ -1,9 +1,8 @@
 import { useState, useEffect } from "react";
-import { MINISTRY, REGISTER } from "../data/content";
+import { MINISTRY, FEATURED_EVENT } from "../data/content";
 
 const LINKS = [
   ["Almighty 9.0", "#invisible-god"],
-  ["Free Bus", "#free-bus"],
   ["About", "#about"],
   ["Mission", "#mission"],
   ["What We Do", "#what-we-do"],
@@ -36,8 +35,8 @@ export default function Nav() {
           ))}
         </nav>
         <div className="nav-right">
-          <a href={REGISTER.url} target="_blank" rel="noopener noreferrer" className="btn nav-register">
-            {REGISTER.ctaLabel}
+          <a href={FEATURED_EVENT.replayUrl} target="_blank" rel="noopener noreferrer" className="btn nav-register">
+            Watch Replay
           </a>
           <button
             className={"nav-burger" + (open ? " open" : "")}
@@ -56,8 +55,8 @@ export default function Nav() {
             {label}
           </a>
         ))}
-        <a href={REGISTER.url} target="_blank" rel="noopener noreferrer" className="btn full" onClick={() => setOpen(false)}>
-          {REGISTER.ctaLabel}
+        <a href={FEATURED_EVENT.replayUrl} target="_blank" rel="noopener noreferrer" className="btn full" onClick={() => setOpen(false)}>
+          Watch Replay
         </a>
       </div>
     </header>

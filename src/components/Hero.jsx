@@ -1,4 +1,4 @@
-import { MINISTRY, REGISTER } from "../data/content";
+import { MINISTRY, FEATURED_EVENT } from "../data/content";
 
 export default function Hero() {
   return (
@@ -39,12 +39,12 @@ export default function Hero() {
             Watch Latest Ministration
           </a>
           <a
-            href={REGISTER.url}
+            href={FEATURED_EVENT.replayUrl}
             target='_blank'
             rel='noopener noreferrer'
             className='btn ghost'
           >
-            {REGISTER.ctaLabel}
+            Watch the Replay
           </a>
         </div>
       </div>

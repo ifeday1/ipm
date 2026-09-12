@@ -25,6 +25,8 @@ export const FEATURED_EVENT = {
   entry: "Entry is free",
   bus: "Free bus available",
   sponsorshipPhone: "08164192318",
+  concluded: true,
+  replayUrl: "https://www.youtube.com/live/c3i6ZF3f--Y?si=exUR09iwAceyYUq0",
 };
 
 export const FREE_BUS = {
@@ -100,15 +102,14 @@ export const WHAT_WE_DO = [
 ];
 
 export const EVENTS = {
-  upcoming: [
+  upcoming: [],
+  past: [
     {
       date: "2026-09-06",
       title: "Immortal Invisible God 9.0 — The Almighty",
       location: "Balmoral Hall, Federal Palace Hotel and Casino, Victoria Island, Lagos",
-      description: "Red carpet at 3:00 PM, main event at 4:00 PM. Entry is free, with a free bus available.",
+      description: "A night of praise and worship. Watch the replay on YouTube.",
     },
-  ],
-  past: [
     {
       date: "2025-09-09",
       title: "The Immortal, Invisible God 2025",
