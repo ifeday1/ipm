@@ -1,16 +1,13 @@
 import { useState, useEffect } from "react";
+import { Link, NavLink } from "react-router-dom";
 import { MINISTRY, FEATURED_EVENT } from "../data/content";
 
 const LINKS = [
-  ["Almighty 9.0", "#invisible-god"],
-  ["About", "#about"],
-  ["Mission", "#mission"],
-  ["What We Do", "#what-we-do"],
-  ["Events", "#events"],
-  ["Gallery", "#gallery"],
-  ["Testimonials", "#testimonials"],
-  ["FAQ", "#faq"],
-  ["Contact", "#contact"],
+  ["Home", "/"],
+  ["About", "/about"],
+  ["Events", "/events"],
+  ["Gallery", "/gallery"],
+  ["Contact", "/contact"],
 ];
 
 export default function Nav() {
@@ -24,14 +21,14 @@ export default function Nav() {
   return (
     <header className="nav">
       <div className="nav-inner">
-        <a href="#top" className="nav-brand" onClick={() => setOpen(false)}>
+        <Link to="/" className="nav-brand" onClick={() => setOpen(false)}>
           <img src={MINISTRY.logoWhite} alt={MINISTRY.name} />
-        </a>
+        </Link>
         <nav className="nav-links">
-          {LINKS.map(([label, href]) => (
-            <a key={href} href={href}>
+          {LINKS.map(([label, to]) => (
+            <NavLink key={to} to={to} end>
               {label}
-            </a>
+            </NavLink>
           ))}
         </nav>
         <div className="nav-right">
@@ -50,10 +47,10 @@ export default function Nav() {
       </div>
 
       <div className={"nav-mobile" + (open ? " open" : "")}>
-        {LINKS.map(([label, href]) => (
-          <a key={href} href={href} onClick={() => setOpen(false)}>
+        {LINKS.map(([label, to]) => (
+          <NavLink key={to} to={to} end onClick={() => setOpen(false)}>
             {label}
-          </a>
+          </NavLink>
         ))}
         <a href={FEATURED_EVENT.replayUrl} target="_blank" rel="noopener noreferrer" className="btn full" onClick={() => setOpen(false)}>
           Watch Replay

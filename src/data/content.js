@@ -29,6 +29,55 @@ export const FEATURED_EVENT = {
   replayUrl: "https://www.youtube.com/live/c3i6ZF3f--Y?si=exUR09iwAceyYUq0",
 };
 
+export const IIG9_PHOTOS = {
+  // The first 10 show by default; the rest appear after "View more".
+  moments: [
+    { src: "/assets/iig9/moment-01.jpg", caption: "The Almighty — the stage is set", wide: true },
+    { src: "/assets/iig9/moment-03.jpg", caption: "Lost in worship" },
+    { src: "/assets/iig9/moment-04.jpg", caption: "Hands lifted high" },
+    { src: "/assets/iig9/moment-05.jpg", caption: "Bowed in His presence" },
+    { src: "/assets/iig9/moment-06.jpg", caption: "Arms open to the Almighty" },
+    { src: "/assets/iig9/moment-08.jpg", caption: "Praise from the heart" },
+    { src: "/assets/iig9/moment-09.jpg", caption: "A moment of prayer" },
+    { src: "/assets/iig9/moment-10.jpg", caption: "Worship in the crowd" },
+    { src: "/assets/iig9/moment-07.jpg", caption: "On the red carpet" },
+    { src: "/assets/iig9/moment-02.jpg", caption: "A sea of lights in Balmoral Hall", wide: true },
+    { src: "/assets/iig9/moment-13.jpg", caption: "A full house at The Almighty", wide: true },
+    { src: "/assets/iig9/moment-11.jpg", caption: "Dancing before the Lord" },
+    { src: "/assets/iig9/moment-12.jpg", caption: "Joy in the room" },
+    { src: "/assets/iig9/moment-14.jpg", caption: "Lights up for the Almighty" },
+    { src: "/assets/iig9/moment-15.jpg", caption: "Praise with everything" },
+    { src: "/assets/iig9/moment-16.jpg", caption: "Singing along" },
+    { src: "/assets/iig9/moment-17.jpg", caption: "Friends in worship" },
+    { src: "/assets/iig9/moment-18.jpg", caption: "Hands folded in prayer" },
+    { src: "/assets/iig9/moment-19.jpg", caption: "A song of praise" },
+    { src: "/assets/iig9/moment-20.jpg", caption: "Eyes closed, heart open" },
+    { src: "/assets/iig9/moment-21.jpg", caption: "Celebrating in the crowd" },
+    { src: "/assets/iig9/moment-22.jpg", caption: "Lifting up His name" },
+    { src: "/assets/iig9/moment-23.jpg", caption: "In His presence" },
+    { src: "/assets/iig9/moment-24.jpg", caption: "On the keys" },
+  ],
+  host: [
+    { src: "/assets/iig9/korede-01.jpg", caption: "Korede Emmanuel ministering at The Almighty" },
+    { src: "/assets/iig9/korede-03.jpg", caption: "Korede Emmanuel in worship" },
+    { src: "/assets/iig9/korede-06.jpg", caption: "Korede Emmanuel with Yinka Alasoyori" },
+    { src: "/assets/iig9/korede-08.jpg", caption: "Korede Emmanuel with Bidemi Olaoba" },
+    { src: "/assets/iig9/korede-02.jpg", caption: "Korede Emmanuel on stage" },
+    { src: "/assets/iig9/korede-04.jpg", caption: "Korede Emmanuel leading praise" },
+    { src: "/assets/iig9/korede-07.jpg", caption: "Korede Emmanuel and Yinka Alasoyori in praise" },
+    { src: "/assets/iig9/korede-05.jpg", caption: "Korede Emmanuel with the IPM choir" },
+  ],
+  ministers: [
+    { name: "Yinka Alasoyori", src: "/assets/iig9/yinka-alasoyori.jpg" },
+    { name: "Bidemi Olaoba", src: "/assets/iig9/bidemi-olaoba.jpg" },
+    { name: "Dare Justified", src: "/assets/iig9/dare-justified.jpg" },
+    { name: "Olafunke Ayodele", src: "/assets/iig9/olafunke-ayodele.jpg" },
+    { name: "Femi Weere", src: "/assets/iig9/femi-weere.jpg" },
+    { name: "Abiodunola", src: "/assets/iig9/abiodunola.jpg" },
+    { name: "Inumidun Pearl", src: "/assets/iig9/inumidun-pearl.jpg" },
+  ],
+};
+
 export const FREE_BUS = {
   eyebrow: "Free Bus Movement",
   title: "Your ride to The Almighty is on us.",

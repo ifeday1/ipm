@@ -1,4 +1,5 @@
 import { MINISTRY, FEATURED_EVENT } from "../data/content";
+import { Link } from "react-router-dom";
 import SocialLinks from "./SocialLinks";
 
 export default function Footer() {
@@ -7,10 +8,11 @@ export default function Footer() {
       <div className="wrap foot-row">
         <img src={MINISTRY.logoWhite} alt={MINISTRY.name} className="foot-logo" />
         <div className="foot-links">
-          <a href="#about">About</a>
-          <a href="#events">Events</a>
+          <Link to="/about">About</Link>
+          <Link to="/events">Events</Link>
+          <Link to="/gallery">Gallery</Link>
           <a href={FEATURED_EVENT.replayUrl} target="_blank" rel="noopener noreferrer">Watch Replay</a>
-          <a href="#contact">Contact</a>
+          <Link to="/contact">Contact</Link>
         </div>
         <SocialLinks className="social-row footer-social" />
       </div>

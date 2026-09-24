@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { FEATURED_EVENT } from "../data/content";
 
 export default function InvisibleGod() {
@@ -40,6 +41,9 @@ export default function InvisibleGod() {
             <a href={e.replayUrl} target="_blank" rel="noopener noreferrer" className="btn">
               Watch the Replay
             </a>
+            <Link to="/gallery" className="btn ghost">
+              See the Photos
+            </Link>
           </div>
         </div>
       </div>

@@ -1,23 +1,24 @@
 import { useEffect } from "react";
+import { Routes, Route, useLocation } from "react-router-dom";
 import Nav from "./components/Nav";
-import Hero from "./components/Hero";
-import InvisibleGod from "./components/InvisibleGod";
-import About from "./components/About";
-import Mission from "./components/Mission";
-import FeaturedMinistration from "./components/FeaturedMinistration";
-import WhatWeDo from "./components/WhatWeDo";
-import Events from "./components/Events";
-import Gallery from "./components/Gallery";
-import Leader from "./components/Leader";
-import Testimonials from "./components/Testimonials";
-import Support from "./components/Support";
-import FAQ from "./components/FAQ";
-import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import Home from "./pages/Home";
+import AboutPage from "./pages/AboutPage";
+import EventsPage from "./pages/EventsPage";
+import GalleryPage from "./pages/GalleryPage";
+import ContactPage from "./pages/ContactPage";
 import "./App.css";
 
 export default function App() {
+  const { pathname, hash } = useLocation();
+
+  // Each page mounts fresh sections, so scroll to the top (or the linked section)
+  // and re-attach the scroll-reveal observer whenever the route changes.
   useEffect(() => {
+    const target = hash && document.querySelector(hash);
+    if (target) target.scrollIntoView();
+    else window.scrollTo(0, 0);
+
     const prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     const elements = document.querySelectorAll(".reveal");
     if (prefersReduced) {
@@ -37,24 +38,21 @@ export default function App() {
     );
     elements.forEach((el) => observer.observe(el));
     return () => observer.disconnect();
-  }, []);
+  }, [pathname, hash]);
 
   return (
     <>
       <Nav />
-      <Hero />
-      <InvisibleGod />
-      <About />
-      <Mission />
-      <FeaturedMinistration />
-      <WhatWeDo />
-      <Events />
-      <Gallery />
-      <Leader />
-      <Testimonials />
-      <Support />
-      <FAQ />
-      <Contact />
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/events" element={<EventsPage />} />
+          <Route path="/gallery" element={<GalleryPage />} />
+          <Route path="/contact" element={<ContactPage />} />
+          <Route path="*" element={<Home />} />
+        </Routes>
+      </main>
       <Footer />
     </>
   );
