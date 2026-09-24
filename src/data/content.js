@@ -187,7 +187,7 @@ export const GALLERY = [
 export const LEADER = {
   name: "Olowookere Emmanuel Oluwakorede",
   role: "Founder & Lead Minister, Immortal Praise Ministry",
-  image: "/assets/leader-portrait.jpg",
+  image: "/assets/leader-korede.jpg",
   bio: "Fast-rising Gospel music minister Olowookere Emmanuel Oluwakorede, born on September 2nd in the 1990s, is the visionary behind Immortal Praise Ministry (IPM). Hailing from Ile-Ife in Osun State, Nigeria, Emmanuel has recently launched the ministry's debut album titled Da Ina Tuntun, which inspired his nickname. Emmanuel is an anointed vocalist, songwriter, and music minister, as well as a Christian actor and recording artist. He is also the convener of the annual praise and worship event, The Immortal, Invisible God.",
 };
 
