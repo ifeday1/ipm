@@ -1,4 +1,5 @@
 import PageHeader from "../components/PageHeader";
+import AlmightyVideo from "../components/AlmightyVideo";
 import AlmightyPhotos from "../components/AlmightyPhotos";
 import Gallery from "../components/Gallery";
 
@@ -12,6 +13,7 @@ export default function GalleryPage() {
         image="/assets/iig9/moment-02.jpg"
         position="center 45%"
       />
+      <AlmightyVideo />
       <AlmightyPhotos />
       <Gallery />
     </>
